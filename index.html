@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Verbas Rescisórias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <h2>Calculadora de Verbas Rescisórias</h2>
+            
+            <div class="form-group">
+                <label for="salario">Salário Bruto:</label>
+                <input type="text" id="salario" placeholder="R$ 0,00">
+            </div>
+            
+            <div class="form-group">
+                <label for="meses">Meses Trabalhados:</label>
+                <input type="number" id="meses" placeholder="Ex: 12">
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="aviso" checked>
+                <label for="aviso">Aviso Prévio Indenizado</label>
+            </div>
+            
+            <button id="calcular">Calcular</button>
+            
+            <div id="resultado" class="hidden">
+                <h3>Resultado:</h3>
+                <div class="result-grid">
+                    <div>Saldo de Salário:</div>
+                    <div id="saldoSalario">R$ 0,00</div>
+                    
+                    <div>13º Proporcional:</div>
+                    <div id="decimoTerceiro">R$ 0,00</div>
+                    
+                    <div>Férias Proporcionais:</div>
+                    <div id="ferias">R$ 0,00</div>
+                    
+                    <div>1/3 de Férias:</div>
+                    <div id="tercoFerias">R$ 0,00</div>
+                    
+                    <div>Aviso Prévio:</div>
+                    <div id="aviso_valor">R$ 0,00</div>
+                    
+                    <div>FGTS Depositado:</div>
+                    <div id="fgtsDepositado">R$ 0,00</div>
+                    
+                    <div>Multa do FGTS (40%):</div>
+                    <div id="multaFGTS">R$ 0,00</div>
+                </div>
+                
+                <div class="total">
+                    <div>TOTAL ESTIMADO:</div>
+                    <div id="total">R$ 0,00</div>
+                </div>
+                
+                <p class="nota">*Cálculo simplificado. Consulte um advogado especializado para valores precisos.</p>
+                
+                <div class="contact-btn">
+                    <a href="https://wa.me/5599984188950" target="_blank">
+                        Fale com um Advogado Especializado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
